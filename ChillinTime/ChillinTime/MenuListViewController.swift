@@ -9,21 +9,49 @@ import UIKit
 
 class MenuListViewController: UIViewController {
 
+    @IBOutlet weak var menuCollectionView: UICollectionView!
+    
+    let menuData: [MenuData] = MenuData.menu
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setCollectionView()
+    }
 
-        // Do any additional setup after loading the view.
+}
+extension MenuListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    // collectionView setting
+    func setCollectionView() {
+        menuCollectionView.dataSource = self
+        menuCollectionView.delegate = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, 
+                        numberOfItemsInSection section: Int) -> Int {
+        return menuData.count
     }
-    */
+    
+    
+    func collectionView(_ collectionView: UICollectionView, 
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: indexPath) as? MenuListCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        cell.setConfigue(menuData[indexPath.row])
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 170, height: 170)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 17
+    }
 }
