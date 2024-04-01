@@ -15,6 +15,8 @@
 		2E5893022BBA950D00367C59 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2E5893012BBA950D00367C59 /* Base */; };
 		2E58930A2BBA95B900367C59 /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5893092BBA95B900367C59 /* MenuData.swift */; };
 		2E58930C2BBA961300367C59 /* CartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E58930B2BBA961300367C59 /* CartData.swift */; };
+		CC0742322BBAA4A6001B6F26 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0742312BBAA4A6001B6F26 /* CartTableViewCell.swift */; };
+		CC0742342BBAA8CD001B6F26 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0742332BBAA8CD001B6F26 /* CartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		2E5893032BBA950D00367C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5893092BBA95B900367C59 /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
 		2E58930B2BBA961300367C59 /* CartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartData.swift; sourceTree = "<group>"; };
+		CC0742312BBAA4A6001B6F26 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		CC0742332BBAA8CD001B6F26 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				2E5893032BBA950D00367C59 /* Info.plist */,
 				2E5893092BBA95B900367C59 /* MenuData.swift */,
 				2E58930B2BBA961300367C59 /* CartData.swift */,
+				CC0742332BBAA8CD001B6F26 /* CartViewController.swift */,
+				CC0742312BBAA4A6001B6F26 /* CartTableViewCell.swift */,
 			);
 			path = ChillinTime;
 			sourceTree = "<group>";
@@ -144,7 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0742322BBAA4A6001B6F26 /* CartTableViewCell.swift in Sources */,
 				2E58930A2BBA95B900367C59 /* MenuData.swift in Sources */,
+				CC0742342BBAA8CD001B6F26 /* CartViewController.swift in Sources */,
 				2E58930C2BBA961300367C59 /* CartData.swift in Sources */,
 				2E5892FA2BBA950A00367C59 /* ViewController.swift in Sources */,
 				2E5892F62BBA950A00367C59 /* AppDelegate.swift in Sources */,
@@ -300,7 +308,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 79LSKHWYJ8;
+				DEVELOPMENT_TEAM = 5Z8G42AVKD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChillinTime/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,7 +341,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 79LSKHWYJ8;
+				DEVELOPMENT_TEAM = 5Z8G42AVKD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChillinTime/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
