@@ -23,6 +23,8 @@ class MenuListCollectionViewCell: UICollectionViewCell {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3){
                 self.contentView.backgroundColor = .white
             }
+            
+            
         }
     }
     
