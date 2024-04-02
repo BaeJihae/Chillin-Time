@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -14,21 +14,21 @@
             <objects>
                 <viewController storyboardIdentifier="CartViewController" id="BYZ-38-t0r" customClass="CartViewController" customModule="ChillinTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYJ-mE-9d9">
-                                <rect key="frame" x="0.0" y="672.33333333333337" width="414" height="189.66666666666663"/>
+                                <rect key="frame" x="0.0" y="701" width="430" height="197"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qJj-Pj-P4m">
-                                        <rect key="frame" x="32" y="53.000000000000007" width="350" height="94.666666666666686"/>
+                                        <rect key="frame" x="32" y="53" width="366" height="102"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartTableViewCell" id="vD3-aZ-Kuq" customClass="CartTableViewCell" customModule="ChillinTime" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="50" width="350" height="44.666667938232422"/>
+                                                <rect key="frame" x="0.0" y="50" width="366" height="44.666667938232422"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vD3-aZ-Kuq" id="CF4-O0-Ox3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="44.666667938232422"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="44.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og0-WO-0cC">
@@ -38,7 +38,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMl-Cv-Izw">
-                                                            <rect key="frame" x="298" y="5" width="47" height="35"/>
+                                                            <rect key="frame" x="314" y="5" width="47" height="35"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="47" id="VVg-id-sVG"/>
                                                                 <constraint firstAttribute="height" constant="35" id="lbR-yL-cCu"/>
@@ -48,11 +48,11 @@
                                                                 <color key="baseForegroundColor" systemColor="systemPinkColor"/>
                                                             </buttonConfiguration>
                                                             <connections>
-                                                                <action selector="xButton:" destination="vD3-aZ-Kuq" eventType="touchUpInside" id="Mst-pQ-caZ"/>
+                                                                <action selector="deleteButtonAction:" destination="vD3-aZ-Kuq" eventType="touchUpInside" id="jez-V7-271"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDx-qQ-6Av">
-                                                            <rect key="frame" x="251" y="5" width="47" height="35"/>
+                                                            <rect key="frame" x="267" y="5" width="47" height="35"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="47" id="42K-4N-qa5"/>
                                                                 <constraint firstAttribute="height" constant="35" id="vcW-0r-ftz"/>
@@ -64,7 +64,7 @@
                                                             </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfT-vb-ek1">
-                                                            <rect key="frame" x="204" y="5" width="47" height="35"/>
+                                                            <rect key="frame" x="220" y="5" width="47" height="35"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="47" id="2Mu-AV-dTO"/>
                                                                 <constraint firstAttribute="height" constant="35" id="8KE-tx-Yq6"/>
@@ -74,7 +74,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pe0-vY-Hcr">
-                                                            <rect key="frame" x="157" y="5" width="47" height="35"/>
+                                                            <rect key="frame" x="173" y="5" width="47" height="35"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="47" id="3nC-jF-SLL"/>
                                                                 <constraint firstAttribute="height" constant="35" id="TLO-QP-wQ7"/>
@@ -106,7 +106,7 @@
                                                     <outlet property="minusButton" destination="Pe0-vY-Hcr" id="18L-QF-OMy"/>
                                                     <outlet property="plusButton" destination="RDx-qQ-6Av" id="x7n-9L-3UR"/>
                                                     <outlet property="selectedLabel" destination="og0-WO-0cC" id="jr0-yf-W4y"/>
-                                                    <outlet property="xButton" destination="oMl-Cv-Izw" id="j86-rx-P3N"/>
+                                                    <outlet property="xButton" destination="oMl-Cv-Izw" id="3Ds-oK-qCR"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -126,13 +126,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="총 금액" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXG-DJ-J2m">
-                                        <rect key="frame" x="312" y="17" width="62" height="27"/>
+                                        <rect key="frame" x="328" y="17" width="62" height="27"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iat-f2-wOR">
-                                        <rect key="frame" x="382" y="30.666666666666629" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="398" y="30.666666666666629" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -175,11 +175,11 @@
                     </view>
                     <connections>
                         <outlet property="cartTableView" destination="qJj-Pj-P4m" id="9el-0F-enB"/>
-                        <outlet property="dcCountLabel" destination="GDw-Ge-FJW" id="Sg6-z2-WYm"/>
-                        <outlet property="orderCountLabel" destination="q8h-RH-myw" id="yKh-9Y-Be1"/>
-                        <outlet property="orderNumLabel" destination="J1U-TH-7Il" id="iUh-tX-luZ"/>
-                        <outlet property="totalNumLabel" destination="Iat-f2-wOR" id="7Vb-Gh-8ce"/>
-                        <outlet property="totalPriceLabel" destination="zXG-DJ-J2m" id="IV5-3A-hKZ"/>
+                        <outlet property="dcCountLabel" destination="GDw-Ge-FJW" id="0iq-vB-bUe"/>
+                        <outlet property="orderCountLabel" destination="q8h-RH-myw" id="hZ8-qb-sba"/>
+                        <outlet property="orderNumLabel" destination="J1U-TH-7Il" id="v5g-zr-fxn"/>
+                        <outlet property="totalNumLabel" destination="Iat-f2-wOR" id="PPO-cv-3PY"/>
+                        <outlet property="totalPriceLabel" destination="zXG-DJ-J2m" id="htl-wP-K24"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -195,7 +195,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
