@@ -17,6 +17,7 @@
 		2E58930C2BBA961300367C59 /* CartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E58930B2BBA961300367C59 /* CartData.swift */; };
 		2E5893102BBA9CAD00367C59 /* MenuListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E58930F2BBA9CAD00367C59 /* MenuListCollectionViewCell.swift */; };
 		2E5893142BBACFDC00367C59 /* CartDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5893132BBACFDC00367C59 /* CartDataManager.swift */; };
+		2E979F252BBC293D00DCD990 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E979F242BBC293D00DCD990 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2E58930B2BBA961300367C59 /* CartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartData.swift; sourceTree = "<group>"; };
 		2E58930F2BBA9CAD00367C59 /* MenuListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListCollectionViewCell.swift; sourceTree = "<group>"; };
 		2E5893132BBACFDC00367C59 /* CartDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDataManager.swift; sourceTree = "<group>"; };
+		2E979F242BBC293D00DCD990 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				2E58930B2BBA961300367C59 /* CartData.swift */,
 				2E5893092BBA95B900367C59 /* MenuData.swift */,
 				2E5893132BBACFDC00367C59 /* CartDataManager.swift */,
+				2E979F242BBC293D00DCD990 /* Category.swift */,
 				2E5892FE2BBA950D00367C59 /* Assets.xcassets */,
 				2E5893032BBA950D00367C59 /* Info.plist */,
 			);
@@ -157,6 +160,7 @@
 				2E5893102BBA9CAD00367C59 /* MenuListCollectionViewCell.swift in Sources */,
 				2E5892F82BBA950A00367C59 /* SceneDelegate.swift in Sources */,
 				2E5893142BBACFDC00367C59 /* CartDataManager.swift in Sources */,
+				2E979F252BBC293D00DCD990 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

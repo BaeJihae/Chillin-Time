@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var smoothieBtn: UIButton!
     @IBOutlet weak var adeBtn: UIButton!
     @IBOutlet weak var teaBtn: UIButton!
-    @IBOutlet weak var desertBtn: UIButton!
+    @IBOutlet weak var dessertBtn: UIButton!
     
     @IBOutlet weak var menuCollectionView: UICollectionView!
     
@@ -25,14 +25,15 @@ class ViewController: UIViewController {
     var categoryName: String = "베스트"
     
     // 카테고리 버튼
-    lazy var categories = [bestBtn, coffeeBtn, smoothieBtn, adeBtn, teaBtn, desertBtn]
+    lazy var categories = [bestBtn, coffeeBtn, smoothieBtn, adeBtn, teaBtn, dessertBtn]
     
-    let menuData: [MenuData] = MenuData.menu
+    let menuData: [MenuData] = MenuData.coffeeMenu
     var cartDataManager = CartDataManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setCollectionView()
+        setBackColor()
     }
     
     @IBAction func reloadBeverages(_ sender: UIButton) {
@@ -41,8 +42,11 @@ class ViewController: UIViewController {
             categoryName = buttonName
             print(categoryName)
         }
-                
-        
+            
+    }
+    
+    func setBackColor() {
+        changeBackColor(button: bestBtn)
     }
     
     private func changeBackColor(button: UIButton) {
@@ -57,8 +61,6 @@ class ViewController: UIViewController {
         
         categories.forEach {
             $0?.backgroundColor = UIColor(red: 128/255, green: 202/255, blue: 255/255, alpha: 1)
-            // 버튼 배경 칠린 색
-            /*UIColor(named: "BasicColor")*/
             $0?.tintColor = .white
             
         }

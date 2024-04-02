@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,10 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CD-JV-g4b">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ehf-lQ-ftU">
+                                <rect key="frame" x="0.0" y="-27" width="393" height="136"/>
+                                <color key="backgroundColor" red="0.56862747670000002" green="0.78431367870000002" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chillin' Coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZz-9x-6FB">
+                                <rect key="frame" x="16.000000000000007" y="69" width="125.66666666666669" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1CD-JV-g4b">
                                 <rect key="frame" x="0.0" y="109" width="393" height="29.666666666666657"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJM-ut-Zp3">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJM-ut-Zp3">
                                         <rect key="frame" x="0.0" y="0.0" width="65.666666666666671" height="29.666666666666668"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -32,7 +41,7 @@
                                             <action selector="reloadBeverages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Cb-qw-Q8M"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vye-YP-gxN">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vye-YP-gxN">
                                         <rect key="frame" x="65.666666666666686" y="0.0" width="65.333333333333314" height="29.666666666666668"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -43,7 +52,7 @@
                                             <action selector="reloadBeverages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NmO-T9-PyG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4V-oG-TJY">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4V-oG-TJY">
                                         <rect key="frame" x="131" y="0.0" width="65.666666666666686" height="29.666666666666668"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -54,7 +63,7 @@
                                             <action selector="reloadBeverages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zbh-4P-Ou5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QR-b7-T0m">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QR-b7-T0m">
                                         <rect key="frame" x="196.66666666666666" y="0.0" width="65.333333333333343" height="29.666666666666668"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -65,7 +74,7 @@
                                             <action selector="reloadBeverages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3mp-FK-oxg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY5-hV-P40">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY5-hV-P40">
                                         <rect key="frame" x="262" y="0.0" width="65.666666666666686" height="29.666666666666668"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -76,7 +85,7 @@
                                             <action selector="reloadBeverages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4wD-lB-SOF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfs-E1-Avo">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfs-E1-Avo">
                                         <rect key="frame" x="327.66666666666669" y="0.0" width="65.333333333333314" height="29.666666666666668"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -91,7 +100,7 @@
                                 <color key="backgroundColor" red="0.50196078430000002" green="0.79215686269999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="menuListView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xij-c7-bQF">
-                                <rect key="frame" x="0.0" y="138.66666666666666" width="393" height="491.33333333333337"/>
+                                <rect key="frame" x="17" y="155.66666666666666" width="359" height="474.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZnP-Qv-x4a">
                                     <size key="itemSize" width="190" height="190"/>
@@ -101,7 +110,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuCell" id="U9n-gv-0h8" customClass="MenuListCollectionViewCell" customModule="ChillinTime" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+                                        <rect key="frame" x="84.666666666666671" y="0.0" width="190" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HZn-Oq-rof">
                                             <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
@@ -152,26 +161,24 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chillin' Coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZz-9x-6FB">
-                                <rect key="frame" x="16.000000000000007" y="69" width="125.66666666666669" height="32"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.56862747670000002" green="0.78431367870000002" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1CD-JV-g4b" secondAttribute="trailing" id="3j5-W9-XaT"/>
                             <constraint firstItem="QZz-9x-6FB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="4aJ-ip-VLO"/>
                             <constraint firstItem="1CD-JV-g4b" firstAttribute="top" secondItem="QZz-9x-6FB" secondAttribute="bottom" constant="8" symbolic="YES" id="ARW-Pg-buf"/>
-                            <constraint firstItem="Xij-c7-bQF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CFW-8k-3Im"/>
+                            <constraint firstItem="Xij-c7-bQF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="CFW-8k-3Im"/>
+                            <constraint firstItem="Ehf-lQ-ftU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fhh-dt-iJC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QZz-9x-6FB" secondAttribute="trailing" constant="251.33000000000001" id="OJC-Zd-aiN"/>
                             <constraint firstItem="QZz-9x-6FB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VI0-sP-lW2"/>
-                            <constraint firstItem="Xij-c7-bQF" firstAttribute="top" secondItem="1CD-JV-g4b" secondAttribute="bottom" id="VgW-iU-0cN"/>
+                            <constraint firstItem="Xij-c7-bQF" firstAttribute="top" secondItem="1CD-JV-g4b" secondAttribute="bottom" constant="17" id="VgW-iU-0cN"/>
                             <constraint firstItem="1CD-JV-g4b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VtC-CJ-DnO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ehf-lQ-ftU" secondAttribute="trailing" id="YIe-CQ-eNb"/>
+                            <constraint firstItem="1CD-JV-g4b" firstAttribute="top" secondItem="Ehf-lQ-ftU" secondAttribute="bottom" id="ikI-fH-vLk"/>
+                            <constraint firstItem="Ehf-lQ-ftU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-27" id="lyG-qZ-tE5"/>
                             <constraint firstItem="1CD-JV-g4b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="m4l-So-dWW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xij-c7-bQF" secondAttribute="trailing" id="nIk-cM-U4R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xij-c7-bQF" secondAttribute="trailing" constant="17" id="nIk-cM-U4R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xij-c7-bQF" secondAttribute="bottom" constant="188" id="ubS-5G-1Tt"/>
                         </constraints>
                     </view>
@@ -179,7 +186,7 @@
                         <outlet property="adeBtn" destination="9QR-b7-T0m" id="4lc-ei-6uI"/>
                         <outlet property="bestBtn" destination="iJM-ut-Zp3" id="oCX-3R-8Jv"/>
                         <outlet property="coffeeBtn" destination="Vye-YP-gxN" id="T91-c5-VE2"/>
-                        <outlet property="desertBtn" destination="bfs-E1-Avo" id="ThD-r4-rKP"/>
+                        <outlet property="dessertBtn" destination="bfs-E1-Avo" id="ThD-r4-rKP"/>
                         <outlet property="menuCollectionView" destination="Xij-c7-bQF" id="Y8y-Ym-tgF"/>
                         <outlet property="smoothieBtn" destination="y4V-oG-TJY" id="5In-ea-iUa"/>
                         <outlet property="stackView" destination="1CD-JV-g4b" id="CSP-x9-6CB"/>
