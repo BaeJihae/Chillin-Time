@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ppr-lr-ND9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -17,54 +17,111 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-127" y="4"/>
-        </scene>
-        <!--Menu List View Controller-->
-        <scene sceneID="TWK-if-riR">
-            <objects>
-                <viewController id="ppr-lr-ND9" customClass="MenuListViewController" customModule="ChillinTime" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="m1T-1e-DCv">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="menuListView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pRt-s1-48u">
-                                <rect key="frame" x="17" y="141" width="359" height="493"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CD-JV-g4b">
+                                <rect key="frame" x="0.0" y="109" width="393" height="29.666666666666657"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJM-ut-Zp3">
+                                        <rect key="frame" x="0.0" y="0.0" width="65.666666666666671" height="29.666666666666668"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="베스트">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="reloadBeverages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Cb-qw-Q8M"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vye-YP-gxN">
+                                        <rect key="frame" x="65.666666666666686" y="0.0" width="65.333333333333314" height="29.666666666666668"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="커피">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="reloadBeverages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NmO-T9-PyG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4V-oG-TJY">
+                                        <rect key="frame" x="131" y="0.0" width="65.666666666666686" height="29.666666666666668"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="스무디">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="reloadBeverages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zbh-4P-Ou5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QR-b7-T0m">
+                                        <rect key="frame" x="196.66666666666666" y="0.0" width="65.333333333333343" height="29.666666666666668"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="에이드">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="reloadBeverages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3mp-FK-oxg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY5-hV-P40">
+                                        <rect key="frame" x="262" y="0.0" width="65.666666666666686" height="29.666666666666668"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="차">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="reloadBeverages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4wD-lB-SOF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfs-E1-Avo">
+                                        <rect key="frame" x="327.66666666666669" y="0.0" width="65.333333333333314" height="29.666666666666668"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="디저트">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="reloadBeverages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tn0-Km-BtS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.50196078430000002" green="0.79215686269999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="menuListView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xij-c7-bQF">
+                                <rect key="frame" x="0.0" y="138.66666666666666" width="393" height="491.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qKe-22-yWZ">
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZnP-Qv-x4a">
                                     <size key="itemSize" width="190" height="190"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuCell" id="6FO-Lj-6wo" customClass="MenuListCollectionViewCell" customModule="ChillinTime" customModuleProvider="target">
-                                        <rect key="frame" x="84.666666666666671" y="0.0" width="190" height="190"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuCell" id="U9n-gv-0h8" customClass="MenuListCollectionViewCell" customModule="ChillinTime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VTD-Gx-eei">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HZn-Oq-rof">
                                             <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mug" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0qS-po-cPl">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mug" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zZJ-i9-cm1">
                                                     <rect key="frame" x="25" y="17.333333333333336" width="140" height="119.33333333333331"/>
                                                     <color key="tintColor" systemColor="tableCellBlueTextColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="100" id="OzZ-Ev-eq1"/>
-                                                        <constraint firstAttribute="width" constant="120" id="kAg-JO-gdg"/>
+                                                        <constraint firstAttribute="width" constant="120" id="3Jm-zA-cnc"/>
+                                                        <constraint firstAttribute="height" constant="100" id="9ar-pz-BQt"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,500원" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZU-5E-4Wf">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,500원" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gj-Je-ssh">
                                                     <rect key="frame" x="14" y="163" width="162" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
-                                                    <color key="textColor" red="0.10980392156862745" green="0.28235294117647058" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.10980392160000001" green="0.28235294119999998" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이스아메리카노" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1L0-v9-law">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이스아메리카노" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRO-Lo-jTz">
                                                     <rect key="frame" x="14" y="143" width="162" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -72,46 +129,66 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="0qS-po-cPl" secondAttribute="trailing" constant="25" id="0Yh-pe-FJQ"/>
-                                                <constraint firstAttribute="bottom" secondItem="0qS-po-cPl" secondAttribute="bottom" constant="53" id="24E-GO-JMg"/>
-                                                <constraint firstAttribute="bottom" secondItem="eZU-5E-4Wf" secondAttribute="bottom" priority="900" constant="10" id="B5h-HX-tyB"/>
-                                                <constraint firstItem="0qS-po-cPl" firstAttribute="leading" secondItem="VTD-Gx-eei" secondAttribute="leading" constant="25" id="GAe-Ra-x6h"/>
-                                                <constraint firstItem="eZU-5E-4Wf" firstAttribute="leading" secondItem="VTD-Gx-eei" secondAttribute="leading" constant="14" id="JZZ-Nx-LsZ"/>
-                                                <constraint firstItem="0qS-po-cPl" firstAttribute="top" secondItem="VTD-Gx-eei" secondAttribute="top" constant="17" id="KN9-nv-Xni"/>
-                                                <constraint firstItem="1L0-v9-law" firstAttribute="leading" secondItem="VTD-Gx-eei" secondAttribute="leading" constant="14" id="XFu-nS-sIZ"/>
-                                                <constraint firstAttribute="trailing" secondItem="1L0-v9-law" secondAttribute="trailing" constant="14" id="YiL-U6-0Ec"/>
-                                                <constraint firstAttribute="trailing" secondItem="eZU-5E-4Wf" secondAttribute="trailing" constant="14" id="Zd3-gt-Hg0"/>
-                                                <constraint firstItem="1L0-v9-law" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0qS-po-cPl" secondAttribute="bottom" priority="500" constant="8" id="h6g-O4-TRQ"/>
-                                                <constraint firstItem="eZU-5E-4Wf" firstAttribute="top" secondItem="1L0-v9-law" secondAttribute="bottom" constant="3" id="nYw-H2-8XL"/>
+                                                <constraint firstAttribute="trailing" secondItem="7Gj-Je-ssh" secondAttribute="trailing" constant="14" id="1tg-WG-CTV"/>
+                                                <constraint firstAttribute="trailing" secondItem="zZJ-i9-cm1" secondAttribute="trailing" constant="25" id="59x-Cz-TdN"/>
+                                                <constraint firstItem="7Gj-Je-ssh" firstAttribute="leading" secondItem="HZn-Oq-rof" secondAttribute="leading" constant="14" id="64n-ut-uVD"/>
+                                                <constraint firstItem="7Gj-Je-ssh" firstAttribute="top" secondItem="fRO-Lo-jTz" secondAttribute="bottom" constant="3" id="EzQ-5a-d0Y"/>
+                                                <constraint firstItem="fRO-Lo-jTz" firstAttribute="leading" secondItem="HZn-Oq-rof" secondAttribute="leading" constant="14" id="F7A-20-ZME"/>
+                                                <constraint firstAttribute="bottom" secondItem="zZJ-i9-cm1" secondAttribute="bottom" constant="53" id="FuA-Dc-GCM"/>
+                                                <constraint firstAttribute="trailing" secondItem="fRO-Lo-jTz" secondAttribute="trailing" constant="14" id="Iyo-fW-8Db"/>
+                                                <constraint firstItem="zZJ-i9-cm1" firstAttribute="leading" secondItem="HZn-Oq-rof" secondAttribute="leading" constant="25" id="Kem-a6-RYk"/>
+                                                <constraint firstItem="fRO-Lo-jTz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zZJ-i9-cm1" secondAttribute="bottom" priority="500" constant="8" id="TbM-d3-b4v"/>
+                                                <constraint firstAttribute="bottom" secondItem="7Gj-Je-ssh" secondAttribute="bottom" priority="900" constant="10" id="jAw-Ay-vrK"/>
+                                                <constraint firstItem="zZJ-i9-cm1" firstAttribute="top" secondItem="HZn-Oq-rof" secondAttribute="top" constant="17" id="uFg-e4-nga"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="190" height="190"/>
                                         <connections>
-                                            <outlet property="menuImageView" destination="0qS-po-cPl" id="03V-iI-Pg6"/>
-                                            <outlet property="menuNameLabel" destination="1L0-v9-law" id="7uq-wV-Anb"/>
-                                            <outlet property="menuPriceLabel" destination="eZU-5E-4Wf" id="sr3-Ow-99D"/>
+                                            <outlet property="menuImageView" destination="zZJ-i9-cm1" id="cLk-cy-f1d"/>
+                                            <outlet property="menuNameLabel" destination="fRO-Lo-jTz" id="Hmn-GF-pbC"/>
+                                            <outlet property="menuPriceLabel" destination="7Gj-Je-ssh" id="FvD-yE-gkW"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chillin' Coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZz-9x-6FB">
+                                <rect key="frame" x="16.000000000000007" y="69" width="125.66666666666669" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="JuB-sG-L0f"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.56862747670000002" green="0.78431367870000002" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="pRt-s1-48u" firstAttribute="top" secondItem="JuB-sG-L0f" secondAttribute="top" constant="82" id="CKe-Gv-dLF"/>
-                            <constraint firstItem="pRt-s1-48u" firstAttribute="leading" secondItem="JuB-sG-L0f" secondAttribute="leading" constant="17" id="DV5-YC-KZ9"/>
-                            <constraint firstItem="JuB-sG-L0f" firstAttribute="bottom" secondItem="pRt-s1-48u" secondAttribute="bottom" constant="184" id="Xtw-el-gYX"/>
-                            <constraint firstItem="JuB-sG-L0f" firstAttribute="trailing" secondItem="pRt-s1-48u" secondAttribute="trailing" constant="17" id="qLm-Ut-F7p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1CD-JV-g4b" secondAttribute="trailing" id="3j5-W9-XaT"/>
+                            <constraint firstItem="QZz-9x-6FB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="4aJ-ip-VLO"/>
+                            <constraint firstItem="1CD-JV-g4b" firstAttribute="top" secondItem="QZz-9x-6FB" secondAttribute="bottom" constant="8" symbolic="YES" id="ARW-Pg-buf"/>
+                            <constraint firstItem="Xij-c7-bQF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CFW-8k-3Im"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QZz-9x-6FB" secondAttribute="trailing" constant="251.33000000000001" id="OJC-Zd-aiN"/>
+                            <constraint firstItem="QZz-9x-6FB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VI0-sP-lW2"/>
+                            <constraint firstItem="Xij-c7-bQF" firstAttribute="top" secondItem="1CD-JV-g4b" secondAttribute="bottom" id="VgW-iU-0cN"/>
+                            <constraint firstItem="1CD-JV-g4b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VtC-CJ-DnO"/>
+                            <constraint firstItem="1CD-JV-g4b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="m4l-So-dWW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xij-c7-bQF" secondAttribute="trailing" id="nIk-cM-U4R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xij-c7-bQF" secondAttribute="bottom" constant="188" id="ubS-5G-1Tt"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="menuCollectionView" destination="pRt-s1-48u" id="GpO-t8-2MB"/>
+                        <outlet property="adeBtn" destination="9QR-b7-T0m" id="4lc-ei-6uI"/>
+                        <outlet property="bestBtn" destination="iJM-ut-Zp3" id="oCX-3R-8Jv"/>
+                        <outlet property="coffeeBtn" destination="Vye-YP-gxN" id="T91-c5-VE2"/>
+                        <outlet property="desertBtn" destination="bfs-E1-Avo" id="ThD-r4-rKP"/>
+                        <outlet property="menuCollectionView" destination="Xij-c7-bQF" id="Y8y-Ym-tgF"/>
+                        <outlet property="smoothieBtn" destination="y4V-oG-TJY" id="5In-ea-iUa"/>
+                        <outlet property="stackView" destination="1CD-JV-g4b" id="CSP-x9-6CB"/>
+                        <outlet property="teaBtn" destination="dY5-hV-P40" id="TiP-lB-Vxy"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vTx-Ug-C9q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="861.83206106870227" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-338.16793893129767" y="-87.323943661971839"/>
         </scene>
     </scenes>
     <resources>
@@ -120,7 +197,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tableCellBlueTextColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
