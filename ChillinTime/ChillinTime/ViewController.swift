@@ -16,9 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var adeBtn: UIButton!
     @IBOutlet weak var teaBtn: UIButton!
     @IBOutlet weak var dessertBtn: UIButton!
-    
     @IBOutlet weak var menuCollectionView: UICollectionView!
-    
     @IBOutlet weak var stackView: UIStackView!
     
     // 카테고리 이름
@@ -27,8 +25,10 @@ class ViewController: UIViewController {
     // 카테고리 버튼
     lazy var categories = [bestBtn, coffeeBtn, smoothieBtn, adeBtn, teaBtn, dessertBtn]
     
-    let menuData: [MenuData] = MenuData.coffeeMenu
+    // 메뉴 데이타 ( 베스트 메뉴판으로 초기화 )
+    var menuData: [MenuData] = MenuData.bestMenu
     var cartDataManager = CartDataManager()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,17 +36,44 @@ class ViewController: UIViewController {
         setBackColor()
     }
     
+    
     @IBAction func reloadBeverages(_ sender: UIButton) {
+        
         changeBackColor(button: sender)
+        
         if let buttonName = sender.titleLabel?.text {
             categoryName = buttonName
-            print(categoryName)
+            changeMenuData(buttonName)
         }
-            
+        
+        menuCollectionView.reloadData()
     }
+    
     
     func setBackColor() {
         changeBackColor(button: bestBtn)
+    }
+    
+    
+    // 버튼 이름에 따른 cartData값 변경 함수
+    func changeMenuData(_ buttonName: String) {
+        
+        switch buttonName {
+        case "베스트" :
+            menuData = MenuData.bestMenu
+        case "커피" :
+            menuData = MenuData.coffeeMenu
+        case "스무디" :
+            menuData = MenuData.smoothieMenu
+        case "에이드" :
+            menuData = MenuData.adeMenu
+        case "티" :
+            menuData = MenuData.teaMenu
+        case "디저트" :
+            menuData = MenuData.dessertMenu
+        default:
+            menuData = MenuData.bestMenu
+        }
     }
     
     private func changeBackColor(button: UIButton) {

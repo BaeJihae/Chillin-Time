@@ -8,10 +8,10 @@
 import Foundation
 
 enum Category {
-    case 베스트
-    case 커피
-    case 스무디
-    case 에이드
-    case 티
-    case 디저트
+    case best
+    case coffee
+    case smoothie
+    case ade
+    case tea
+    case dessert
 }
