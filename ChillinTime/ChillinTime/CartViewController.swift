@@ -11,33 +11,12 @@ class CartViewController: UIViewController {
     
     @IBOutlet weak var cartTableView: UITableView!
     
-    @IBOutlet weak var orderCountLabel: UILabel!
-    @IBOutlet weak var orderNumLabel: UILabel!
-    @IBOutlet weak var totalPriceLabel: UILabel!
-    @IBOutlet weak var totalNumLabel: UILabel!
-    @IBOutlet weak var dcCountLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         cartTableView.dataSource = self
         cartTableView.delegate = self
-        
-        orderCountLabel.text = "주문할 메뉴"
-        orderNumLabel.text = ""
-        totalPriceLabel.text = "총 금액"
-        totalNumLabel.text = ""
-        dcCountLabel.text = ""
-        
-        orderCountLabel.numberOfLines = 1
-        orderCountLabel.adjustsFontSizeToFitWidth = true
-        orderNumLabel.numberOfLines = 1
-        orderNumLabel.adjustsFontSizeToFitWidth = true
-        totalPriceLabel.numberOfLines = 1
-        totalPriceLabel.adjustsFontSizeToFitWidth = true
-        totalNumLabel.numberOfLines = 1
-        totalNumLabel.adjustsFontSizeToFitWidth = true
-        dcCountLabel.numberOfLines = 1
-        dcCountLabel.adjustsFontSizeToFitWidth = true
     }
     
     
@@ -88,13 +67,6 @@ class CartViewController: UIViewController {
     
     
 }
-//재고관리용 cartManager - 민웅
-//func checkOrderAvailability(title: String, orderAmount: Int) -> Bool {
-//  guard let item = items.filter({ $0.title == title }).first,
-//    item.stockHoldings >= orderAmount + 1
-//    else { return false }
-//  return true
-//}
 
 //재고관리 지해님 코드
 //struct CartDataManager {
@@ -129,14 +101,10 @@ extension CartViewController: UITableViewDataSource, UITableViewDelegate {
         let cafeData = cartData[indexPath.row]
         
         
-        //        print(menuData.filter { $0.name == cafeData.cartName })
-        
         cell?.deleteButtonAction = {
-            //            self.deleteData(at:indexPath.row)
         }
         cell?.selectedLabel.text = cafeData.cartName
         cell?.countLabel.text = String(cafeData.cartNum ?? 0)
-        //        cell?.delegate = self
         return cell ?? UITableViewCell()
     }
 }
