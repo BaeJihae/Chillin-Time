@@ -35,7 +35,6 @@ class MenuListCollectionViewCell: UICollectionViewCell {
         contentView.clipsToBounds = true
         contentView.layer.borderWidth = 1
         contentView.layer.borderColor = UIColor(red: 128/255, green: 202/255, blue: 255/255, alpha: 1.0).cgColor
-        
     }
     
 }

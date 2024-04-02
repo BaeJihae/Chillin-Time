@@ -54,10 +54,21 @@ extension MenuListViewController: UICollectionViewDelegate, UICollectionViewData
     }
 
     
-    // collectionView 선택시 cart에 추가
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+    // collectionView 선택시 셀 배경색 변경 / cart에 추가
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? MenuListCollectionViewCell {
+            cell.contentView.backgroundColor = UIColor(red: 128/255, green: 202/255, blue: 255/255, alpha: 0.3)
+        }
         cartDataManager.addCartData(name: menuData[indexPath.row].name)
+    }
+    
+    // collectionView 선택 해제시 셀 배경색 변경
+    func collectionView(_ collectionView: UICollectionView,
+                        didDeselectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? MenuListCollectionViewCell {
+            cell.contentView.backgroundColor = UIColor.white
+        }
     }
     
     
@@ -65,12 +76,16 @@ extension MenuListViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
         return CGSize(width: 170, height: 170)
     }
     
     
     // collectionView의 행 간격 설정
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, 
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        
         return 17
     }
 }
