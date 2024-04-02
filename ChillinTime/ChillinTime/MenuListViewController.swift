@@ -36,6 +36,7 @@ extension MenuListViewController: UICollectionViewDelegate, UICollectionViewData
     // collectionView cell 개수
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
+        print(collectionView)
         return menuData.count
     }
     
