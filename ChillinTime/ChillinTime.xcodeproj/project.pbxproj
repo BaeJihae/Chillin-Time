@@ -15,8 +15,8 @@
 		2E5893022BBA950D00367C59 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2E5893012BBA950D00367C59 /* Base */; };
 		2E58930A2BBA95B900367C59 /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5893092BBA95B900367C59 /* MenuData.swift */; };
 		2E58930C2BBA961300367C59 /* CartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E58930B2BBA961300367C59 /* CartData.swift */; };
-		6AD884982BBAC7C5009CA020 /* AllCancelOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD884972BBAC7C5009CA020 /* AllCancelOrderViewController.swift */; };
 		6AD8849A2BBC0FAE009CA020 /* AllCancelOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD884992BBC0FAE009CA020 /* AllCancelOrder.storyboard */; };
+		6AD8849C2BBC449B009CA020 /* AllCancelOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8849B2BBC449B009CA020 /* AllCancelOrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		2E5893032BBA950D00367C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5893092BBA95B900367C59 /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
 		2E58930B2BBA961300367C59 /* CartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartData.swift; sourceTree = "<group>"; };
-		6AD884972BBAC7C5009CA020 /* AllCancelOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AllCancelOrderViewController.swift; path = "../../../../../../../Library/Mobile Documents/.Trash/Chillin-Time 오후 7.41.13/ChillinTime/ChillinTime/AllCancelOrderViewController.swift"; sourceTree = "<group>"; };
 		6AD884992BBC0FAE009CA020 /* AllCancelOrder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllCancelOrder.storyboard; sourceTree = "<group>"; };
+		6AD8849B2BBC449B009CA020 /* AllCancelOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCancelOrderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 				2E5893092BBA95B900367C59 /* MenuData.swift */,
 				2E58930B2BBA961300367C59 /* CartData.swift */,
 				6AD884992BBC0FAE009CA020 /* AllCancelOrder.storyboard */,
-				6AD884972BBAC7C5009CA020 /* AllCancelOrderViewController.swift */,
+				6AD8849B2BBC449B009CA020 /* AllCancelOrderViewController.swift */,
 			);
 			path = ChillinTime;
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E58930A2BBA95B900367C59 /* MenuData.swift in Sources */,
-				6AD884982BBAC7C5009CA020 /* AllCancelOrderViewController.swift in Sources */,
+				6AD8849C2BBC449B009CA020 /* AllCancelOrderViewController.swift in Sources */,
 				2E58930C2BBA961300367C59 /* CartData.swift in Sources */,
 				2E5892FA2BBA950A00367C59 /* ViewController.swift in Sources */,
 				2E5892F62BBA950A00367C59 /* AppDelegate.swift in Sources */,
