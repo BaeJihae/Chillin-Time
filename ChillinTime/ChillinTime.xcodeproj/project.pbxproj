@@ -15,6 +15,7 @@
 		2E5893022BBA950D00367C59 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2E5893012BBA950D00367C59 /* Base */; };
 		2E58930A2BBA95B900367C59 /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5893092BBA95B900367C59 /* MenuData.swift */; };
 		2E58930C2BBA961300367C59 /* CartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E58930B2BBA961300367C59 /* CartData.swift */; };
+		7820FFD22BBBE6D100ED56B5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7820FFD12BBBE6D100ED56B5 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2E5893032BBA950D00367C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5893092BBA95B900367C59 /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
 		2E58930B2BBA961300367C59 /* CartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartData.swift; sourceTree = "<group>"; };
+		7820FFD12BBBE6D100ED56B5 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2E5892F52BBA950A00367C59 /* AppDelegate.swift */,
 				2E5892F72BBA950A00367C59 /* SceneDelegate.swift */,
 				2E5892F92BBA950A00367C59 /* ViewController.swift */,
+				7820FFD12BBBE6D100ED56B5 /* CategoryViewController.swift */,
 				2E5892FB2BBA950A00367C59 /* Main.storyboard */,
 				2E5892FE2BBA950D00367C59 /* Assets.xcassets */,
 				2E5893002BBA950D00367C59 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				2E58930C2BBA961300367C59 /* CartData.swift in Sources */,
 				2E5892FA2BBA950A00367C59 /* ViewController.swift in Sources */,
 				2E5892F62BBA950A00367C59 /* AppDelegate.swift in Sources */,
+				7820FFD22BBBE6D100ED56B5 /* CategoryViewController.swift in Sources */,
 				2E5892F82BBA950A00367C59 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
