@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+enum Category {
+    case 베스트
+    case 커피
+    case 에이드
+    case 티
+    case 스무디
+    case 디저트
+}
